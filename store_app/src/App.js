@@ -3,6 +3,8 @@ import React from "react";
 import './App.css';
 import Header from "./componnets/Header";
 import Footer from "./componnets/Footer";
+import HomeScreen from "./pages/HomeScreen";
+import { Container } from "react-bootstrap";
 
 
 function App() {
@@ -10,7 +12,9 @@ function App() {
     <>
       <Header/>
       <main className="py-3">
-      <h1>Welcome To The Store of Your Dreams</h1>
+      <Container>
+        <HomeScreen/>
+      </Container>
       </main>
       <Footer/>
     </>
