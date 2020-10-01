@@ -1,0 +1,25 @@
+{
+  "name": "ecommerce_app",
+  "version": "1.0.0",
+  "description": "mern full-stack app",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "express": "^4.17.1",
+    "prettier": "^2.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node shop_backend/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JacquelineOmollo/ecommerce_app.git"
+  },
+  "author": "Jacqueline Omollo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JacquelineOmollo/ecommerce_app/issues"
+  },
+  "homepage": "https://github.com/JacquelineOmollo/ecommerce_app#readme"
+}
