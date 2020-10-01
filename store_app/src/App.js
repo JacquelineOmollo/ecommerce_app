@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <Header/>
-      <main>
+      <main className="py-3">
       <h1>Welcome To The Store of Your Dreams</h1>
       </main>
       <Footer/>
