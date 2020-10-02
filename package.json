@@ -3,14 +3,23 @@
   "version": "1.0.0",
   "description": "mern full-stack app",
   "main": "index.js",
+  "type": "module",
   "dependencies": {
     "bootstrap": "^4.5.2",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "mongoose": "^5.10.7",
     "prettier": "^2.1.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.4"
+  },
   "scripts": {
-    "start": "node shop_backend/server"
+    "start": "node shop_backend/server",
+    "server": "nodemon shop_backend/server",
+    "client": "npm start --prefix store_app",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "repository": {
     "type": "git",
