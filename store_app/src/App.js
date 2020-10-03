@@ -1,8 +1,8 @@
 import React from "react";
 // import {Container, Row, Col} from "react-bootstrap";
 import {BrowserRouter as Router, Route} from "react-router-dom";
-import Header from "./componnets/Header";
-import Footer from "./componnets/Footer";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 import HomeScreen from "./pages/HomeScreen";
 import ProductScreen from "./pages/ProductScreen";
 import { Container } from "react-bootstrap";

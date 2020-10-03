@@ -8,7 +8,7 @@ const router = express.Router();
 // @access Public
 router.get("/", asyncHandler(async (req, res) =>{
     const products = await Product.find({})
-   res.json(products)
+    res.json(products)
 }))
 
 // @desc Fetch all products
@@ -16,7 +16,8 @@ router.get("/", asyncHandler(async (req, res) =>{
 // @access Public
 router.get("/:id", asyncHandler(async(req, res) =>{
     const product = await Product.findById(req.params.id)
-
+   //  res.status(401)
+   //  throw new Error("Not Authorized")
 //  Running on error middleware 
  if (product){
     res.json(product)
