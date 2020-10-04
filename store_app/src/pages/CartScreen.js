@@ -29,21 +29,21 @@ const CartScreen = ({match, location, history}) => {
                  : (
                 <ListGroup variant="flush">
                     {cartItems.map(item => (
-                        <ListGroupItem key={item.product}>
+                        <ListGroup.Item addToCartItem key={item.product}>
                             <Row>
                                 <Col md={2}>
                                     <Image src={item.Image} alt={item.name} fluid rounded />
                                 </Col>
                                 <Col md={3}>
-                                    <Link to={`/product/${item.product}`}>{items.name}</Link>
+                                    <Link to={`/product/${item.product}`}>{item.name}</Link>
                                 </Col>
                             </Row>
-                        </ListGroupItem>
+                        </ListGroup.Item>
                     ))}
                     </ListGroup>
-
+                 )}
             </Col>
-
+                 
             <Col md={2}>
             </Col>
 
