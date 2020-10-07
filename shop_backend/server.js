@@ -1,14 +1,24 @@
 import express from "express";
 import connectDB from "./data/config/db.js";
+import morgan from 'morgan';
 import {notFound, errorHandler} from "./middleware/errorMiddleware.js";
 import dotenv from "dotenv";
 import productRoutes from "./routes/productRoutes.js"
 
 dotenv.config()
+const app = express();
+
 
 connectDB()
 
-const app = express();
+if (process.env.NODE_ENV === 'development') {
+    app.use(morgan('dev'))
+  }
+
+app.use(express.json())
+
+
+
 
 app.get("/", (req, res) =>{
     res.send("Yoour shopping Now!")

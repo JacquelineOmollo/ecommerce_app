@@ -16,9 +16,7 @@ router.get("/", asyncHandler(async (req, res) =>{
 // @access Public
 router.get("/:id", asyncHandler(async(req, res) =>{
     const product = await Product.findById(req.params.id)
-   //  res.status(401)
-   //  throw new Error("Not Authorized")
-//  Running on error middleware 
+  
  if (product){
     res.json(product)
  } else {
